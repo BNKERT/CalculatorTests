@@ -15,6 +15,8 @@ namespace Calculator
                     operation,
                     quitCondition = "quit";
 
+                Calculator calculator = new Calculator();
+
                 while (true)
                 {
                     Console.WriteLine("Please enter the first value or type quit to exit");
@@ -39,7 +41,8 @@ namespace Calculator
                         break;
                     }
 
-                    Console.WriteLine("Your equation is {0} {1} {2}", firstInput, operation, secondInput);
+
+                   
                 }
 
 
@@ -79,7 +82,7 @@ namespace Calculator
                     throw new NotImplementedException();
                 }
 
-                public bool ValidateInputs(ref string first,ref string second)
+                public bool ValidateInputs(string first,string second,out int firstNumber, out int secondNumber)
                 {
                     throw new NotImplementedException();
                 }

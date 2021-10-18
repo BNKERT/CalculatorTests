@@ -15,25 +15,6 @@ namespace Calculator
                     operation,
                     quitCondition = "quit";
 
-                //Calculator myCalculator = new Caluculator();
-                //int i;firstNumber = Console.ReadLine();
-                ////count to 10 with for loop
-                ////benefits: you know when its going to end
-                //for(i = 0;i < 10; i++)
-                //{
-                //    Console.WriteLine(i);
-                //}
-                ////While evaluates condition first and then runs loop
-                //while(i < 9)
-                //{
-                //    Console.WriteLine("Don't show me");
-                //}
-                ////runs once and then evaluates regardless of condition
-                //do
-                //{
-                //    Console.WriteLine("Will show me once");
-                //}
-                //while (i < 9);
                 while (true)
                 {
                     Console.WriteLine("Please enter the first value or type quit to exit");
@@ -59,49 +40,16 @@ namespace Calculator
                     }
 
                     Console.WriteLine("Your equation is {0} {1} {2}", firstInput, operation, secondInput);
-                    ////string composite formatting
-                    //Console.WriteLine("Your first input is {0}, this is a test {1}", firstNumber, 1);
-
-                    ////string concatenation
-                    //Console.WriteLine("Your second input is " + secondNumber);
                 }
 
-                ////string interpolation
-                //Console.WriteLine($"Your second input {secondNumber}");
 
             }
 
-            //Function
-            //private void TestFunc()
-            //{
-
-            //}
 
             //class declaration
             public class Calculator
             {
-                private string _firstInput { get; set; }
-                private string _secondInput { get; set; }
 
-
-                //constructor
-                public Calculator(string firstInput,string secondInput)
-                {
-                    _firstInput = firstInput;
-                    _secondInput = secondInput;
-                }
-
-                public Calculator(string firstInput)
-                {
-                    _firstInput = firstInput;
-                    _secondInput = string.Empty;
-                }
-
-                public Calculator(string firstInput, int secondValue)
-                {
-                    _firstInput = firstInput;
-                    _secondInput = secondValue.ToString();
-                }
 
                 //Method
                 //use internal values
@@ -111,30 +59,28 @@ namespace Calculator
                 }
 
                 //use external values
-                public int Add(string first,string second)
+                public int Add(int first,int second)
                 {
                     throw new NotImplementedException();
                 }
 
-                public int Subtract()
+                public int Subtract(int first, int second)
                 {
                     throw new NotImplementedException();
                 }
 
-                public int Multiply()
+                public int Multiply(int first, int second)
                 {
                     throw new NotImplementedException();
                 }
 
-                public int Divide()
+                public int Divide(int first, int second)
                 {
                     throw new NotImplementedException();
                 }
 
-                //
-                public bool ValidateInputs()
+                public bool ValidateInputs(ref string first,ref string second)
                 {
-                    //_firstInput is valid ? true : false
                     throw new NotImplementedException();
                 }
             }
